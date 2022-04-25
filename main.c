@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+//Luca Sosa Cuenca K2002
 int main()
 {
     printf("Ingresar caractere: ");
