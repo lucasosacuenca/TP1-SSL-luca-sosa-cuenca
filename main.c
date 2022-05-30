@@ -5,7 +5,7 @@ int main()
 {
     printf("Ingresar caractere: ");
     char c;
-    while((c=getchar())!='\n')
+    while((c=getchar())!=EOF)
     {
         if(islower(c))
         {
@@ -15,13 +15,10 @@ int main()
         {
             printf("%c",tolower(c));
         }
-        else if(isdigit(c))
-        {            
-        }
-        else
-        {
-            printf("%c",c);
-        }        
+        else if(!(isdigit(c)))
+        {   
+            printf("%c",c);         
+        }       
     }
     return 0;
 }
